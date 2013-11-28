@@ -11,6 +11,7 @@ class UploadsController < ApplicationController
   # GET /uploads/1
   # GET /uploads/1.json
   def show
+    redirect_to @upload.attachment.url
   end
 
   # GET /uploads/new
