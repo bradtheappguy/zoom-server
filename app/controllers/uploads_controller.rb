@@ -1,6 +1,6 @@
 class UploadsController < ApplicationController
   before_action :set_upload, only: [:show, :edit, :update, :destroy]
-  skip_before_filter :verify_authenticity_token, :only => [:create]
+  skip_before_filter :verify_authenticity_token, :only => [:create, :destroy]
 
   # GET /uploads
   # GET /uploads.json
@@ -56,11 +56,17 @@ class UploadsController < ApplicationController
   # DELETE /uploads/1
   # DELETE /uploads/1.json
   def destroy
-    @upload.destroy
-    respond_to do |format|
-      format.html { redirect_to uploads_url }
-      format.json { head :no_content }
-    end
+   if @upload.delete_token.eql? params[:delete_token]
+     puts "destroying....!!!"
+     @upload.destroy
+     respond_to do |format|
+       format.html { redirect_to uploads_url }
+       format.json { head :no_content }
+     end
+   else
+     puts "NO"
+     render :text => 'Unautorized', :status => :unauthorized
+   end
   end
 
   private

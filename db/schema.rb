@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20131128033032) do
   create_table "uploads", force: true do |t|
     t.string   "filename"
     t.string   "attachment"
+    t.string   "delete_token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -3,7 +3,7 @@ class CreateUploads < ActiveRecord::Migration
     create_table :uploads do |t|
       t.string :filename
       t.string :attachment
-
+      t.string :delete_token
       t.timestamps
     end
   end
