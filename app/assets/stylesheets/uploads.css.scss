@@ -22,7 +22,7 @@
     margin-left: 30px;
     margin-top: 35px;
     padding: 17px;
-    width: 400px;
+    width: 330px;
     color: #536EA6;
 }
 
@@ -47,3 +47,36 @@ a:hover {
 body {
     background-image: none;
 }
+
+a.button {
+display: inline-block;
+font-family: 'Lato', helvetica, arial, sans-serif;
+font-size: 14px;
+text-transform: uppercase;
+color: #fff;
+background: #ff7100;
+line-height: 12px;
+padding: 25px;
+box-shadow: 1px 1px 5px 1px #b85200 inset;
+border-radius: 17px;
+}
+
+a.button .button-arrow {
+display: inline-block;
+width: 10px;
+height: 12px;
+text-indent: -9999px;
+margin-left: 20px;
+background: url(../images/icons/button-arrow.png) no-repeat center center;
+}
+
+a:visited {
+color: #150043;
+text-decoration: none;
+}
+
+a, a:visited {
+color: #150043;
+text-decoration: none;
+}
+
