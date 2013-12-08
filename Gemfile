@@ -49,3 +49,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'carrierwave'
+gem "fog", "~> 1.3.1"
+
