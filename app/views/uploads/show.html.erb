@@ -9,8 +9,7 @@
 
 
 <div id="side_bar">
-  <b>Name: </b>
-  <%= link_to @upload.attachment.url, @upload.attachment.sanitized_file.filename %>
+  <b>Name: My File</b>
   <br/>
   <strong>Size:</strong> <%= number_to_human_size(@upload.attachment.sanitized_file.size) %>
   <br/><br/><br/>
