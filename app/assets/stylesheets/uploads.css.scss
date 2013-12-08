@@ -1,3 +1,48 @@
 // Place all the styles related to the uploads controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main_image {
+    background-color: #F5F6FA;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #b3bfd8 inset;
+    border-radius: 14px;
+    margin-left: 35px;
+    margin-top: 35px;
+    padding: 11px;
+}
+
+#side_bar {
+    background-color: #F5F6FA;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #b3bfd8 inset;
+    border-radius: 17px;
+    height: 600px;
+    margin-left: 30px;
+    margin-top: 35px;
+    padding: 17px;
+    width: 400px;
+    color: #536EA6;
+}
+
+a {
+    color: #150043;
+    background-color: none;
+}
+
+a:hover {
+    color: #ff7100;
+    background-color: none;
+}
+
+#top_nav {
+    border: medium none;
+    box-shadow: 1px 1px 5px 1px #B3BFD8 inset;
+    display: block;
+    height: 45px;
+    background-color: #F5F6FA;
+}
+
+body {
+    background-image: none;
+}
