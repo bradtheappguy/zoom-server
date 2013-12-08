@@ -5,7 +5,7 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => 'IhVCNfhQwrCSyBp5rKpCSV4ytZ2oVnpIsAj1LfF5',                        # required
     :region                 => 'us-west-2',                  # optional, defaults to 'us-east-1'
     #:host                   => 's3.example.com',             # optional, defaults to nil
-    :endpoint               => 'https://uploads.getzoomapp.com.s3-us-west-1.amazonaws.com' # optional, defaults to nil
+    :endpoint               => 'http://uploads.getzoomapp.com.s3-us-west-1.amazonaws.com' # optional, defaults to nil
   }
   config.fog_directory  = 'uploads.getzoomapp.com'                     # required
   #config.fog_public     = false                                   # optional, defaults to true
