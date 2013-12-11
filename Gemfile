@@ -50,3 +50,4 @@ end
 
 gem 'carrierwave'
 gem 'fog'
+gem 'google-analytics-rails'

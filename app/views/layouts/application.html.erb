@@ -13,4 +13,5 @@
 <%= yield %>
 
 </body>
+<%= analytics_init if Rails.env.production? %>
 </html>
